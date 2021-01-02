@@ -1,0 +1,186 @@
+{{> header}}
+
+
+    
+    <!-- Start Section Button List -->
+    <section id="sha_button_list" class="col-12">
+      <div class="row">
+        <div class="col-12 white_back">
+          <ul>
+            <li class="switch_ blescan {{{isBLE}}}">
+              <span class="box">
+                <i class="fa fa-bluetooth" style="transform: scale(1.4)"></i>
+              </span>
+            </li>
+            <li class="switch_ mqtt {{{isMQTT}}}">
+              <span class="box">
+                <i class="">
+                  <span>mqtt</span>
+                </i>
+              </span>
+            </li>
+            <li class="switch_ off">
+              <span class="box">
+                <i class="fa fa-wifi"></i>
+              </span>
+            </li>
+            <li class="switch_ off">
+              <span class="box">
+                <i class="fa fa-snowflake-o"></i>
+              </span>
+            </li>
+            <li class="switch_ on">
+              <span class="box">
+                <i class="fa fa-plus"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Button List -->
+    
+    
+    <div class="col-12">
+          <span class="sha_switch pull-right off x2 enable_scan"></span>
+        </div>
+
+    <div class="col-12 scan_board hidden">
+
+        xxx
+
+    </div>
+
+    <!-- Start Section Body 1 -->
+    <section id="sha_temp_body" class="col-12">
+      
+      <div class="row  top-buffer col_gradient">
+        <div class="col-5">
+          <span class="sha_temp">
+            <span>
+              <span class="temp-data"> 16<span class="small_01">.7</span> <sup>°C</sup> </span>
+              <hr class="line_">
+              <span class="hum-data"> 48<span class="small_01">.3</span> <span class="sup">%</span>
+              </span>
+            </span>
+          </span>
+        </div>
+        <div class="col-7 sha_tile top-buffer height_auto">
+          <div>
+            <div class="col-12">
+              <span class="sha_switch pull-right off x2"></span>
+            </div>
+            <input class="input_" type="text" value="Kuchnia">
+            <span>F5:c3:4a:67:d2:d9</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Body 1 -->
+
+
+
+
+    <!-- Start Section Body 2 -->
+    <section id="sha_temp_meta" class="col-12">
+      <div class="row">
+        <div class="col-12 sha_tile">
+          <div class="row">
+            <div class="col-6">
+              <div>
+                <span class="tile_icon">
+                  <i class="fa fa-umbrella"></i>
+                </span>
+                <span class="tile_info">
+                  Wilgotność
+                  <span>65%</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <span class="tile_icon">
+                  <i class="fa fa-thermometer-half"></i>
+                </span>
+                <span class="tile_info">
+                  Temperatura
+                  <span>16 <sup>&deg;C</sup> </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 sha_tile">
+          <div>
+            <span class="tile_icon">
+              <i class="fa fa-wifi"></i>
+            </span>
+            <span class="tile_info">
+              Internet
+              <span>20 mbps</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Body 2 -->
+    
+    
+    <!-- Start Section Footer -->
+    <section id="sha_footer" class="col-12">
+      <div class="row">
+        <div class="col-8">
+          <div>
+            <span class="footer_title">
+              Current Temperature
+            </span>
+            <span class="footer_data">
+              18.5 <span class="unit">&deg;C</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <span class="footer_title text-right">
+              Turn On/Off
+            </span>
+            <span class="footer_data">
+              <span class="sha_switch pull-right off switchTheme"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Footer -->
+  
+  
+  </div>
+</div>
+
+
+
+
+
+
+{{!--
+{{#unless isListEnabled}}
+
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Donate</li>
+</ul>
+
+
+{{/unless}}
+
+
+
+
+
+
+{{#with author }}
+<h2>My Name is {{firstName}} {{lastName}}</h2>
+
+<p>My First project was {{project.name}}</p>
+{{/with}} --}}

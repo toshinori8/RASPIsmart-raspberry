@@ -1,0 +1,409 @@
+body {
+  padding: 0px;
+  margin: 0px;
+
+  transition: all 100ms linear;
+  background-color: #e3edf7;
+  font-family: "Poppins", sans-serif;
+}
+
+body.dark {
+  background-color: black !important;
+  background-size: cover;
+  background-image: url(https://image.freepik.com/free-photo/grey-gradient-room-background-empty-room-light-interior-your-creative-show-display-your-products_9635-3304.jpg);
+}
+
+body.dark #sha_temp_body .sha_temp {
+  margin-top: 20px;
+
+  background-color: azure;
+  position: relative;
+  display: inline-block;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
+    -0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
+}
+
+.top-buffer {
+  margin-top: 20px;
+}
+.height_auto {
+  height: auto;
+  min-height: 300px;
+}
+
+#sha_app {
+  padding: 20px 0px;
+}
+
+.no-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+.no-focus, .no-focus:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.like-link{
+    cursor: pointer;
+}
+
+.input_,
+.input_:focus {
+  background: none;
+  border: solid 0px;
+  outline: none;
+}
+
+/** Start Section Header Bar Style **/
+#sha_header_bar {
+  color: rgba(49, 69, 106, 0.6);
+}
+
+#sha_header_bar span {
+  display: block;
+}
+
+#sha_header_bar span.sub-heading {
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+#sha_header_bar span.heading {
+  color: rgba(49, 69, 106, 1);
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: -5px;
+}
+
+body.dark span.heading,
+body.dark .sub-heading,
+body.dark i.fa,
+body.dark span.sha_temp .temp-info,
+body.dark span.sha_temp .temp-data {
+  transition: color ease 1s;
+  color: rgba(50, 50, 50, 0.7) !important;
+}
+
+
+
+.col_gradient {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+32 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0) 12%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0) 12%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0) 12%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+#sha_temp_body {
+  margin-top: 23px;
+}
+.white_back {
+  background-color: rgba(241, 241, 241, 1.3) !important;
+}
+
+#sha_temp_body .sha_tile .white_back {
+  position: absolute;
+  z-index: 120;
+}
+
+#sha_temp_body .sha_temp {
+  margin-top: 20px;
+  z-index: 10000;
+  position: absolute;
+  display: inline-block;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.1),
+    -30px -30px 30px -10px rgba(255, 255, 255, 0.4),
+    -0.5px -0.5px 0 rgba(255, 255, 255, 1), 0.5px 0.5px 0 rgba(0, 0, 0, 0.02);
+}
+
+#sha_temp_body .sha_temp > span {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+#sha_temp_body .sha_temp > span {
+  position: relative;
+  top: 120px;
+  left: -10px;
+}
+#sha_temp_body .sha_temp > span > span.temp-data {
+  font-size: 80px;
+  font-weight: normal;
+
+  display: block;
+  color: rgba(49, 69, 106, 1);
+  font-family: "lcd", Fallback, sans-serif;
+}
+#sha_temp_body .small_01 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+#sha_temp_body sup {
+  position: relative;
+  left: 120px;
+  font-size: 70px;
+}
+
+#sha_temp_body .sha_temp > span > span.hum-data {
+  position: absolute;
+  font-size: 45px;
+  font-weight: normal;
+  margin-top: -54px;
+  margin-left: 50px;
+  display: block;
+  color: rgba(49, 69, 106, 1);
+  font-family: "lcd", Fallback, sans-serif;
+}
+#sha_temp_body span.hum-data .small_01 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+#sha_temp_body span.hum-data span.sup {
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  /*    left: 120px;*/
+  font-size: 20px;
+}
+
+#sha_temp_body .sha_temp > span > span.temp-data sup {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 500;
+  top: 24%;
+}
+
+#sha_temp_body .sha_temp > span > span.temp-info {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(49, 69, 106, 0.6);
+  white-space: nowrap;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#sha_temp_body .sha_temp:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 97%;
+  height: 97%;
+  border: rgba(55, 55, 55, 0.1) 4px black;
+  border-radius: inherit;
+
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.03),
+    inset -4px -4px 6px -1px rgba(0, 0, 0, 0.05);
+
+  opacity: 1;
+}
+
+#sha_temp_body .sha_temp hr.line_ {
+  width: 160px;
+  position: relative;
+  top: -39px;
+  left: 10px;
+  color: black;
+}
+
+#sha_temp_body .sha_temp:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 78%;
+  height: 78%;
+  border-radius: inherit;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.02),
+    inset -4px -4px 16px -1px rgba(5, 5, 5, 0.04);
+}
+/** End Section Body 1 Style **/
+
+/** Start Section Body 2 Style **/
+#sha_temp_meta {
+  margin-top: 30px;
+}
+
+.sha_tile > div {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.01);
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 15px 5px 20px -10px rgba(0, 0, 0, 0.15),
+    -15px -5px 20px -10px rgba(255, 255, 255, 0.8);
+}
+
+.sha_tile > div span.tile_icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.01);
+  color: rgba(49, 69, 106, 0.6);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding-top: 17px;
+}
+
+.sha_tile > div span.tile_info {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(49, 69, 106, 0.8);
+  padding-left: 14px;
+  margin-top: 5px;
+}
+
+.sha_tile > div span.tile_info span {
+  display: block;
+  font-weight: 400;
+  color: rgba(49, 69, 106, 0.5);
+}
+
+.sha_tile:not(last-child) {
+  margin-bottom: 12px;
+}
+/** End Section Body 2 Style **/
+
+/** Start Section Footer Style **/
+#sha_footer {
+  margin-top: 15px;
+  color: rgba(49, 69, 106, 0.5);
+}
+
+#sha_footer .footer_title {
+  font-size: 15px;
+  display: block;
+}
+
+#sha_footer .footer_data {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(49, 69, 106, 1);
+}
+
+#sha_footer .footer_data span {
+  color: rgba(49, 69, 106, 0.5);
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+.x2 {
+  transform: scale(0.5);
+}
+.sha_switch {
+    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 127, 71, 0.9);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 2px;
+}
+
+.sha_switch:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  background-color: #e3edf7;
+  border-radius: 12px;
+  right: 1px;
+  top: 1px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+  transition: all ease-out 0.4s;
+}
+/** End Section Footer Style **/
+
+.sha_switch:before {
+}
+
+.sha_switch.on:before {
+}
+
+.sha_switch.off:before {
+  right: 27px;
+}
+
+
+
+.scan_board.hidden{
+    height: 0px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15) inset;
+   opacity: 0;
+   visibility: hidden;
+ 
+}
+
+.scan_board{
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15) inset;
+    margin: 1px;
+    padding: 19px;
+    transition: all ease-in 0.4s;
+    height: 120px;
+}
+
+
+@font-face {
+  font-family: "lcd";
+  src: url("aclock.eot"); /* IE9 Compat Modes */
+  src: url("aclock.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("aclock.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("aclock.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("aclock.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("aclock.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+

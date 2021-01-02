@@ -1,0 +1,69 @@
+#sha_button_list {
+  margin-top: 10px;
+}
+
+#sha_button_list ul {
+  padding: 0;
+}
+
+#sha_button_list .switch_ {
+  list-style: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#sha_button_list ul .switch_:first-child {
+  margin-left: -5px;
+  border: none solid;
+}
+
+#sha_button_list ul .switch_ span.box {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 15px;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+#sha_button_list ul .switch_.off span.box {
+ 
+  color: rgba(49, 69, 106, 0.35);
+
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+  padding-top: 14px;
+}
+
+
+#sha_button_list ul .switch_ span.box span{
+  position: relative;
+  top: -14px; 
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+
+
+
+}
+
+#sha_button_list ul .switch_ span.box {
+  transition: all ease-out 0.5s;
+}
+
+#sha_button_list ul .switch_.on span.box {
+  border-top: 4px solid rgba(255, 127, 71, 0.9);
+  padding-top: 12px;
+  color: rgba(49, 69, 106, 1.35);
+  background-color: rgba(49, 69, 106, 0);
+  box-shadow: 1px -6px 8px rgba(255, 127, 71, 0.3),
+    3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
